@@ -1,0 +1,49 @@
+
+body{
+    margin: 0;
+}
+
+.header{
+    /*4 grid lines that make up our 3 containers */
+    grid-column-start: 1;
+    grid-column-end:4 ;
+}
+
+.container{
+    /*this makes our container take up the entire screen space*/
+    display: grid;
+
+    /* 1fr = 1 fraction of the space so below is 3 eveninly space columns this is responsive*/
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 100px;
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.content-large{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+
+}
+
+
+
+.container div{
+    padding: 10px;
+    border: 1px solid #000000
+    }
+ 
+.footer{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+}
+
+    
